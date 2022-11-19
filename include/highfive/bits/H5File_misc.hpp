@@ -42,6 +42,11 @@ inline File::File(const std::string& filename,
                   unsigned openFlags,
                   const FileAccessProps& fileAccessProps)
     : File(filename, openFlags, FileCreateProps::Default(), fileAccessProps) {}
+// /*
+inline File::File(const hid_t hid) {
+    _hid = hid;
+}
+// */
 
 
 inline File::File(const std::string& filename,

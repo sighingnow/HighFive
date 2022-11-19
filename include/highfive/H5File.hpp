@@ -56,6 +56,7 @@ class File: public Object, public NodeTraits<File>, public AnnotateTraits<File> 
                   unsigned openFlags = ReadOnly,
                   const FileAccessProps& fileAccessProps = FileAccessProps::Default());
 
+    explicit File(const hid_t hid);
     ///
     /// \brief File
     /// \param filename: filepath of the HDF5 file
